@@ -1,0 +1,47 @@
+.main-container{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 2fr 8fr;
+    grid-template-areas: 
+    "panel header header"
+    "panel content announcements"
+    ;
+}
+
+
+.header{
+    background-color: pink;
+    grid-area: header;
+}
+
+.side-panel{
+    grid-area: panel;
+    background-color: blue;
+    display: grid;
+    grid-row: 1fr 1fr;
+
+}
+
+.search{
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#searchfield{
+    flex: 4 0 auto;
+}
+#search-icon{
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+}
+
+.content{
+    background-color: yellow;
+}
+
+.side-announcements{
+    background-color: bisque;
+}
